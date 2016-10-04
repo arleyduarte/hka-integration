@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://intcolombia.testdfacture.com/Main.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Services" />
+  <xs:element name="TimbreEnviaTXT32">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ContenidoArchivoTexto" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="NombreArchivo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimbreEnviaTXT32Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Services" minOccurs="0" name="TimbreEnviaTXT32Result" nillable="true" type="q1:ResponseTimbre" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
